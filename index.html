@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topp">
+        <h1>WEATHER FORECAST (5 DAYS)</h1>
+      </div>
+      <div class="input-container">
+        <select id="location-dropdown">
+          <option value="city">City</option>
+          <option value="coordinates">ID</option>
+          <option value="zipcode">Zip Code</option>
+        </select>
+        <input type="text" id="location-input" placeholder="Enter location" />
+
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <div id="weather-container">
+        <div id="current-day"></div>
+        <div id="five-days"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
